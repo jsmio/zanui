@@ -1,7 +1,11 @@
 <?php get_header(); ?>
 <!-- nav end -->
-<!-- banner start -->
-<div class="am-g am-g-fixed blog-fixed am-u-sm-centered blog-article-margin">
+
+
+<!-- content srart -->
+<div class="am-g am-g-fixed blog-fixed">
+  <!-- banner start -->
+   <div class="am-u-md-8 am-u-sm-12">
     <div data-am-widget="slider" class="am-slider am-slider-b1" data-am-slider='{&quot;controlNav&quot;:false}' >
     <ul class="am-slides">
       <li>
@@ -57,9 +61,6 @@
     </div>
 </div>
 <!-- banner end -->
-
-<!-- content srart -->
-<div class="am-g am-g-fixed blog-fixed">
     <div class="am-u-md-8 am-u-sm-12 blog-bor">
       <h2 class="blog-text-center blog-title"><span>最新文章</span></h2>
 		<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
