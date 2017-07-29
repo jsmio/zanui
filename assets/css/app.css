@@ -222,6 +222,7 @@ a {
  a:hover {
     color:#10D07A;
 }
+.am-article a{color:aqua;}
 .blog-header {
     margin-top:3rem;
 }
