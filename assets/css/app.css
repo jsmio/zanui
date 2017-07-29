@@ -222,7 +222,7 @@ a {
  a:hover {
     color:#10D07A;
 }
-.am-article a{color:aqua;}
+.am-article a{color:gray;}  a:hover{color: crimson;}
 .blog-header {
     margin-top:3rem;
 }
