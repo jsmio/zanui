@@ -88,7 +88,9 @@
     </div>
 <?php endwhile; ?>
 <?php endif; ?> 
+ <div class="am-u-md-4 am-u-sm-12 am-show-md-up blog-sidebar">
 	<?php get_sidebar(); ?>
+ </div>
 </div>
 <!-- content end -->
 <?php get_footer(); ?>

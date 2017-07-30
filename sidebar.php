@@ -1,5 +1,4 @@
- <div class="am-u-md-4 am-u-sm-12 blog-sidebar">
-    <div data-am-sticky="{animation:'scale-up',top:80}">
+    <div data-am-sticky="{animation:'fade',top:80}">
         <div class="blog-sidebar-widget blog-bor ">
             <h2 class="blog-text-center blog-title"><span>About ME</span></h2>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/i/f14.jpg" alt="about me" class="blog-entry-img" >
@@ -34,5 +33,4 @@
                 <li><a href="#">每个人都有一道伤口， 或深或浅，盖上布，以为不存在。</a></li>
             </ul>
         </div>
-    </div>
     </div>

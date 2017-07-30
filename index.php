@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 <!-- nav end -->
-
-
 <!-- content srart -->
 <div class="am-g am-g-fixed blog-fixed">
   <!-- banner start -->
@@ -59,10 +57,8 @@
       </li>
     </ul>
     </div>
-</div>
 <!-- banner end -->
-    <div class="am-u-md-8 am-u-sm-12 blog-bor">
-      <h2 class="blog-text-center blog-title"><span>最新文章</span></h2>
+  <h2 class="blog-text-center blog-title"><span>最新文章</span></h2>
 		<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
         <article class="am-g blog-entry-article">
             <div class="am-u-lg-6 am-u-md-12 am-u-sm-12 blog-entry-img">
@@ -104,8 +100,11 @@
                 <p><a href="" class="blog-continue">continue reading</a></p>
             </div>
         </article>
-    </div>
-	<?php get_sidebar(); ?>
+    </div>    
+ 	<div class="am-u-md-4 am-u-sm-12 blog-sidebar">
+		<?php get_sidebar(); ?>
+	</div>
 </div>
+
 <!-- content end -->
 <?php get_footer(); ?>
