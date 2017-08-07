@@ -4,10 +4,10 @@
   <?php wp_head(); ?>  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>BLOG index with sidebar & slider  | Amaze UI Examples</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
   <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/i/favicon.png">
@@ -22,7 +22,6 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/amazeui.min.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/app.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-  <script src="http://amazeui.github.io/echo/echo.js"></script>
 	<!-- 请置于所有广告位代码之前 -->
 	<script src="https://dup.baidustatic.com/js/ds.js"></script>
 	<script>
@@ -38,16 +37,15 @@
 	// echo.render(); is also available for non-scroll callbacks
 	</script>
 </head>
-<body id="blog">
-<header class="am-g am-g-fixed blog-fixed blog-text-center blog-header">
-    <div class="am-u-sm-8 am-u-sm-centered">
+<body>
+<div id="wrapper" class="wide-layout">	
+<header class="am-g am-g-fixed theme-header">
+    <div class="am-u-sm-centered am-u-lg-centered am-u-md-centered am-u-sm-3">
         <img width="200" src="http://s.amazeui.org/media/i/brand/amazeui-b.png" alt="真是赞 Logo"/>
         <h2 class="am-hide-sm-only"><?php bloginfo(‘name’); ?></h2>
     </div>
-</header>
-<hr>
 <!-- nav start -->
-<nav class="am-g am-g-fixed blog-fixed blog-nav">
+<nav class="am-g-fixed blog-nav">
 <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only blog-button" data-am-collapse="{target: '#blog-collapse'}" ><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
 
   <div class="am-collapse am-topbar-collapse" id="blog-collapse">
@@ -76,4 +74,4 @@
     </form>
   </div>
 </nav>
-<hr>
+</header>

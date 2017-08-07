@@ -63,6 +63,12 @@ am-u-md-8 am-u-sm-12 blog-bor.h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
+.theme-header {
+    background: #fff;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
 .e3lan-below_header {
     margin: 0 auto;
     max-width: 1200px;
