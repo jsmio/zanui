@@ -1,18 +1,6 @@
 <?php get_header(); ?>
 <!-- nav end -->
 <!-- content srart -->
-<div class="am-g am-g-fixed blog-fixed">
-  <!-- banner start -->
-   <div class="am-u-md-8 am-u-sm-12">
-    <div data-am-widget="slider" class="am-slider am-slider-b1" data-am-slider='{&quot;controlNav&quot;:false}' >
-    <ul class="am-slides">
-      <li>
-            <img data-echo="<?php echo get_template_directory_uri(); ?>/assets/i/b1.jpg">
-            <div class="blog-slider-desc am-slider-desc ">
-                <div class="blog-text-center blog-slider-con">
-                    <span><a href="" class="blog-color">Article &nbsp;</a></span>               
-                    <h1 class="blog-h-margin"><a href="">总在思考一句积极的话</a></h1>
-                    <p>那时候刚好下着雨，柏油路面湿冷冷的，还闪烁着青、黄、红颜色的灯火。
                     </p>
                     <span class="blog-bor">2015/10/9</span>
                     <br><br><br><br><br><br><br>                
@@ -57,8 +45,12 @@
       </li>
     </ul>
     </div>
+
 <!-- banner end -->
-  <h2 class="blog-text-center blog-title"><span>最新文章</span></h2>
+<section class="cat-box recent-box recent-blog cat-box">
+	<div class="cat-box-title"><h2>最新文章</h2>
+	</div>	
+	<div class="cat-box-content">  
 		<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
         <article class="am-g blog-entry-article">
             <div class="am-u-lg-6 am-u-md-12 am-u-sm-12 blog-entry-img">
@@ -85,7 +77,7 @@
 -->
    	   	<?php endif; ?>
     	<?php wp_reset_query(); ?>       
-       
+<!--
         <article class="am-g blog-entry-article">
             <div class="am-u-lg-6 am-u-md-12 am-u-sm-12 blog-entry-img">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/i/f10.jpg" alt="" class="am-u-sm-12">
@@ -100,10 +92,14 @@
                 <p><a href="" class="blog-continue">continue reading</a></p>
             </div>
         </article>
-    </div>    
- 	<div class="am-u-md-4 am-u-sm-12 blog-sidebar">
+-->
+	</section>
+</div>
+
+<div class="am-u-md-4 am-u-sm-12 blog-sidebar">
 		<?php get_sidebar(); ?>
-	</div>
+</div>
+
 </div>
 
 <!-- content end -->
