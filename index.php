@@ -3,16 +3,40 @@
 <!-- content srart -->
 
 <div class="am-g am-g-fixed">
-<div class="am-show-md-up">
-	<div class="am-u-lg-6">
-	<a rel="nofollow" target="_blank" href="//www.wpdaxue.com/go/weix" title="性价比最高的香港ASP、PHP主机提供商"><img src="//img.wpdaxue.com/2015/03/wx0329.jpg" width="728" height="90" alt="性价比最高的香港ASP、PHP主机提供商"></a>	
+<div class="am-show-ld-up am-g">
+	<div class="am-u-md-6">
+		<!-- 广告位：顶部广告左一 -->
+		<script>
+		(function() {
+			var s = "_" + Math.random().toString(36).slice(2);
+			document.write('<div id="' + s + '"></div>');
+			(window.slotbydup=window.slotbydup || []).push({
+				id: '4637741',
+				container: s,
+				size: '580,90',
+				display: 'inlay-fix'
+			});
+		})();
+		</script>
 	</div>
-	<div class="am-u-lg-6">
-		<a rel="nofollow" target="_blank" href="https://www.wpdaxue.com/go/faisco2/" title="做网站，就上凡科建站"><img src="//img.wpdaxue.com/2017/06/fk01.png" width="560" height="70" alt="做网站，就上凡科建站"></a>	
+	<div class="am-u-md-6">
+		<!-- 广告位：顶部广告左一 -->
+		<script>
+		(function() {
+			var s = "_" + Math.random().toString(36).slice(2);
+			document.write('<div id="' + s + '"></div>');
+			(window.slotbydup=window.slotbydup || []).push({
+				id: '4637741',
+				container: s,
+				size: '580,90',
+				display: 'inlay-fix'
+			});
+		})();
+		</script>
 	</div>
 </div>	
 <!-- banner start -->
-<div class="am-u-md-8 am-u-sm-12 cat-box">
+<div class="am-u-md-8 am-u-sm-12">
   <div data-am-widget="slider" class="am-slider am-slider-b1" data-am-slider='{"controlNav:false","directionNav":false}' >
 	<ul class="am-slides">
 		<li>
@@ -35,7 +59,7 @@
 </div>
 
 <!-- banner end -->
-<section class="cat-box recent-box recent-blog cat-box">
+<section class="cat-box">
 	<div class="cat-box-title"><h2>最新文章</h2>
 	</div>	
 	<div class="cat-box-content">  
@@ -45,12 +69,13 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/i/f10.jpg" alt="" class="am-u-sm-12">
             </div>
             <div class="am-u-lg-6 am-u-md-12 am-u-sm-12 blog-entry-text">
-                <h3><a href="<?php echo get_permalink(); ?>"><?php the_title_attribute(); ?>"</a></h3>
+                <h3><a href="<?php echo get_permalink(); ?><?php the_title_attribute(); ?>"</a></h3>
                 <span><a href="" class="blog-color"><?php the_category(', ') ?>&nbsp;</a></span>
-                <span> @<?php the_author();?>  &nbsp;</span>
+                <span>@<?php the_author();?>  &nbsp;</span>
                 <span><?php echo get_the_date( 'Y/m/d' ); ?></span>
-                <?php the_excerpt(55); ?>
-                <p><a href="" class="blog-continue">continue reading</a></p>
+				<div class="entry"><?php the_excerpt(40); ?>
+                <a class="am-btn am-btn-danger am-radius am-btn-xs" target="_blank" href="<?php echo get_permalink(); ?>">阅读全文 »</a>
+                </div>                
             </div>
         </article>                
     	<?php endwhile;?>

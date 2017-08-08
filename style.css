@@ -36,7 +36,6 @@ am-u-md-8 am-u-sm-12 blog-bor.h1, h2, h3, h4, h5, h6 {
 }
 
 
-
 /*分页美化
 */
 .posts-nav{ font-size: 14px;
@@ -69,11 +68,6 @@ am-u-md-8 am-u-sm-12 blog-bor.h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 20px;
 }
 
-.e3lan-below_header {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 -20px;
-}
 
 .cat-box {
     margin-bottom: 20px;
@@ -81,4 +75,13 @@ am-u-md-8 am-u-sm-12 blog-bor.h1, h2, h3, h4, h5, h6 {
     padding: 20px;
     background:#fff;
 }
+.cat-box-title {
+    padding-bottom: 10px;
+    overflow: hidden;
+    border-bottom: 1px solid #eaeaea;
+}
 
+.am-slider {
+    overflow: hidden;
+    margin: 20px auto 20px;
+}
