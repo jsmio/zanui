@@ -3,7 +3,7 @@
 <!-- content srart -->
 
 <div class="am-g am-g-fixed">
-<div class="am-show-ld-up am-g">
+<div class="am-show-md-up am-g">
 	<div class="am-u-md-6">
 		<!-- 广告位：顶部广告左一 -->
 		<script>
@@ -36,6 +36,7 @@
 	</div>
 </div>	
 <!-- banner start -->
+<div class="am-g" id="main-content">
 <div class="am-u-md-8 am-u-sm-12">
   <div data-am-widget="slider" class="am-slider am-slider-b1" data-am-slider='{"controlNav:false","directionNav":false}' >
 	<ul class="am-slides">
@@ -109,11 +110,10 @@
 	</section>
 </div>
 
-<div class="am-u-md-4 am-u-sm-12 blog-sidebar">
+<div class="am-u-md-4 am-u-sm-12">
 		<?php get_sidebar(); ?>
 </div>
 
-</div>
 </div>
 
 <!-- content end -->
