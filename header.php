@@ -28,7 +28,7 @@
 <body>
 <div id="wrapper" class="wide-layout">	
 <header class="am-g am-g-fixed theme-header">
-    <div class="am-u-sm-centered am-u-lg-centered am-u-md-centered am-u-sm-3">
+    <div class="am-u-sm-centered">
         <img width="200" src="http://s.amazeui.org/media/i/brand/amazeui-b.png" alt="真是赞 Logo"/>
         <h2 class="am-hide-sm-only"><?php bloginfo(‘name’); ?></h2>
     </div>

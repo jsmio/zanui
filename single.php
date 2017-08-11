@@ -1,22 +1,12 @@
 <?php get_header(); ?>
-<?php if ( have_posts() ): ?>
-<?php while ( have_posts() ) : the_post(); ?>
-<div class="am-g am-g-fixed blog-fixed blog-content">
-    <div class="am-u-md-8 am-u-sm-12">
+<div class="am-g am-g-fixed breadcrumb-box">
 	<?php if(function_exists('cmp_breadcrumbs')) cmp_breadcrumbs();?>
-<!-- 广告位：single-文章标题下 -->
-		<script>
-		(function() {
-			var s = "_" + Math.random().toString(36).slice(2);
-			document.write('<div id="' + s + '"></div>');
-			(window.slotbydup=window.slotbydup || []).push({
-				id: '4562030',
-				container: s,
-				size: '800,250',
-				display: 'inlay-fix'
-			});
-		})();
-		</script>      
+</div>
+
+<div class="am-g am-g-fixed main-content am-g-collapse">
+    <div class="am-u-md-8 am-u-sm-12 post-listing">
+	<?php if ( have_posts() ): ?>
+	<?php while ( have_posts() ) : the_post(); ?>       
        <article class="am-article blog-article-p">
         <div class="am-article-hd">
           <h1 class="am-article-title blog-text-center"><?php the_title(); ?></h1>
@@ -25,11 +15,26 @@
               <span><a href="#"><?php the_author(); ?></a></span>-
               <span><a href="#"><?php echo get_the_date( 'Y/m/d' ); ?></a></span>
           </p>
-        </div>        
+        </div> 
+			<div class="am-container">
+			<!-- 广告位：single-文章标题下 -->
+			<script>
+			(function() {
+				var s = "_" + Math.random().toString(36).slice(2);
+				document.write('<div id="' + s + '"></div>');
+				(window.slotbydup=window.slotbydup || []).push({
+					id: '4659823',
+					container: s,
+					size: '728,90',
+					display: 'inlay-fix'
+				});
+			})();
+			</script>
+			</div>       
         <div class="am-article-bd">
 		<?php the_content(); ?>
         </div>
-      </article>
+       </article>
         
         <div class="am-g blog-article-widget blog-article-margin">
           <div class="am-u-lg-4 am-u-md-5 am-u-sm-7 am-u-sm-centered blog-text-center">
@@ -88,7 +93,7 @@
     </div>
 <?php endwhile; ?>
 <?php endif; ?> 
- <div class="am-u-md-4 am-u-sm-12 am-show-md-up blog-sidebar">
+ <div class="am-u-md-4 am-u-sm-12 am-show-md-up">
 	<?php get_sidebar(); ?>
  </div>
 </div>
