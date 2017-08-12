@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 <!-- nav end -->
 <!-- content srart -->
-
 <div class="am-g am-g-fixed">
 <div class="am-show-md-up am-g">
 	<div class="am-u-md-6">
@@ -35,33 +34,29 @@
 		</script>
 	</div>
 </div>	
-<!-- banner start -->
 <div class="am-g" id="main-content">
+<!-- banner start -->
 <div class="am-u-md-8 am-u-sm-12">
   <div data-am-widget="slider" class="am-slider am-slider-b1" data-am-slider='{"controlNav:false","directionNav":false}' >
 	<ul class="am-slides">
 		<li>
 			<img src="http://s.amazeui.org/media/i/demos/bing-1.jpg">
-
 		</li>
 		<li>
 			<img src="http://s.amazeui.org/media/i/demos/bing-2.jpg">
-
 		</li>
 		<li>
 			<img src="http://s.amazeui.org/media/i/demos/bing-3.jpg">
-
 		</li>
 		<li>
 			<img src="http://s.amazeui.org/media/i/demos/bing-4.jpg">
-
 		</li>
 	</ul>
 </div>
 
 <!-- banner end -->
-<section class="cat-box">
-	<div class="cat-box-title"><h2>最新文章</h2>
+<section class="cat-box recent-box recent-blog">	
+<div class="cat-box-title"><h2>最新文章</h2>
 	</div>	
 	<div class="cat-box-content">  
 		<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
@@ -70,14 +65,14 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/i/f10.jpg" alt="" class="am-u-sm-12">
             </div>
             <div class="am-u-lg-6 am-u-md-12 am-u-sm-12 blog-entry-text">
-                <h3><a href="<?php echo get_permalink(); ?><?php the_title_attribute(); ?>"</a></h3>
+                <h3><a href="<?php echo get_permalink(); ?>"</a><?php the_title_attribute(); ?></h3>
                 <span><a href="" class="blog-color"><?php the_category(', ') ?>&nbsp;</a></span>
                 <span>@<?php the_author();?>  &nbsp;</span>
                 <span><?php echo get_the_date( 'Y/m/d' ); ?></span>
 				<div class="entry"><?php the_excerpt(40); ?>
-                <a class="am-btn am-btn-danger am-radius am-btn-xs" target="_blank" href="<?php echo get_permalink(); ?>">阅读全文 »</a>
+                <a class="am-btn am-btn-danger am-radius am-btn-xs" target="_blank"  title="<?php the_title_attribute(); ?>" href="<?php echo get_permalink(); ?>">阅读全文 »</a>
                 </div>                
-            </div>
+            </div>	
         </article>                
     	<?php endwhile;?>
 <!--

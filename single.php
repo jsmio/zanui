@@ -1,13 +1,12 @@
 <?php get_header(); ?>
-<div class="am-g am-g-fixed breadcrumb-box">
+<div class="am-g am-g-fixed breadcrumb-box am-text-left am-text-middle">
 	<?php if(function_exists('cmp_breadcrumbs')) cmp_breadcrumbs();?>
 </div>
-
-<div class="am-g am-g-fixed main-content am-g-collapse">
+<div class="am-g am-g-fixed" id="main-content">
     <div class="am-u-md-8 am-u-sm-12 post-listing">
 	<?php if ( have_posts() ): ?>
 	<?php while ( have_posts() ) : the_post(); ?>       
-       <article class="am-article blog-article-p">
+       <article class="am-article post-inner">
         <div class="am-article-hd">
           <h1 class="am-article-title blog-text-center"><?php the_title(); ?></h1>
           <p class="am-article-meta blog-text-center">
@@ -16,7 +15,7 @@
               <span><a href="#"><?php echo get_the_date( 'Y/m/d' ); ?></a></span>
           </p>
         </div> 
-			<div class="am-container">
+		<div class="am-container">
 			<!-- 广告位：single-文章标题下 -->
 			<script>
 			(function() {
@@ -30,9 +29,10 @@
 				});
 			})();
 			</script>
-			</div>       
+		</div>       
         <div class="am-article-bd">
-		<?php the_content(); ?>
+        	   <p class="am-article-lead">...</p>
+				<?php the_content(); ?>
         </div>
        </article>
         

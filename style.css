@@ -82,8 +82,6 @@ am-u-md-8 am-u-sm-12 blog-bor.h1, h2, h3, h4, h5, h6 {
 }
 
 #main-content {
-    background: #FFF;
-    margin: 20px auto 25px;
     position: relative;
     padding-top: 10px;
     -webkit-transform: none;
@@ -91,9 +89,10 @@ am-u-md-8 am-u-sm-12 blog-bor.h1, h2, h3, h4, h5, h6 {
 .breadcrumb-box {
     background: #fcfcfc;
     margin-top: -20px;
-    margin-bottom: 20px;
-    padding: 8px 5px;
     border-bottom: 1px solid #eaeaea;
+	border-top: 1px solid #eaeaea;}
+.post-inner {
+    padding: 20px;
 }
 .post-listing {
     background: #FFF;

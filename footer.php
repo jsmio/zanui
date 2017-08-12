@@ -64,7 +64,8 @@
 
     </div>    
 
-    <div class="blog-text-center">© 2015 AllMobilize, Inc. Licensed under MIT license. Made with love By LWXYFER</div>    
+    <div class="blog-text-center">© 2015 AllMobilize, Inc. Licensed under MIT license. Made with love By LWXYFER <p><?php echo get_num_queries(); ?> queries in <?php timer_stop(3); ?> seconds</p>
+</div>    
 
   </footer>
 

@@ -51,7 +51,7 @@ function cmp_breadcrumbs() {
 	$before = '<span class="current">'; // 在当前链接前插入
 	$after = '</span>'; // 在当前链接后插入
 	if ( !is_home() && !is_front_page() || is_paged() ) {
-		echo '<ol  class="am-breadcrumb am-breadcrumb-slas" itemscope itemtype="http://schema.org/WebPage" id="crumbs">'.__( 当前位置： );
+		echo '<ol itemscope itemtype="http://schema.org/WebPage" id="crumbs">'.__( 当前位置： );
 		global $post;
 		$homeLink = home_url();
 		echo ' <a itemprop="breadcrumb" href="' . $homeLink . '">' . __( 首页 ) . '</a> ' . $delimiter . ' ';
