@@ -33,7 +33,7 @@
         <h2 class="am-hide-sm-only"><?php bloginfo(‘name’); ?></h2>
     </div>
 <!-- nav start -->
-	<nav class="am-g-fixed">
+	<nav class="am-g-fixed" id="main-nav">
 	<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only blog-button" data-am-collapse="{target: '#blog-collapse'}" ><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
 
 	  <div class="am-collapse am-topbar-collapse" id="blog-collapse">
@@ -62,4 +62,52 @@
 		</form>
 	  </div>
 	</nav>
-</header>
+<!-- nav end -->
+<?php 
+if (( is_home() || is_front_page() ) ){
+}
+else
+{
+echo "<div class=\"breadcrumb-box am-text-left am-text-middle\">\n";
+if(function_exists('cmp_breadcrumbs')) cmp_breadcrumbs();
+echo "</div>\n";
+}	
+?></header>
+<div class="am-g am-g-fixed">
+<div class="am-show-md-up am-g">
+	<div class="am-u-md-6">
+		<!-- 广告位：顶部广告左一 -->
+		<script>
+		(function() {
+			var s = "_" + Math.random().toString(36).slice(2);
+			document.write('<div id="' + s + '"></div>');
+			(window.slotbydup=window.slotbydup || []).push({
+				id: '4637741',
+				container: s,
+				size: '580,90',
+				display: 'inlay-fix'
+			});
+		})();
+		</script>
+	</div>
+	<div class="am-u-md-6">
+		<!-- 广告位：顶部广告左一 -->
+		<script>
+		(function() {
+			var s = "_" + Math.random().toString(36).slice(2);
+			document.write('<div id="' + s + '"></div>');
+			(window.slotbydup=window.slotbydup || []).push({
+				id: '4637741',
+				container: s,
+				size: '580,90',
+				display: 'inlay-fix'
+			});
+		})();
+		</script>
+	</div>
+</div>
+</div>	
+
+
+
+

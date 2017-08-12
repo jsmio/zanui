@@ -1,7 +1,4 @@
 <?php get_header(); ?>
-<div class="am-g am-g-fixed breadcrumb-box am-text-left am-text-middle">
-	<?php if(function_exists('cmp_breadcrumbs')) cmp_breadcrumbs();?>
-</div>
 <div class="am-g am-g-fixed" id="main-content">
     <div class="am-u-md-8 am-u-sm-12 post-listing">
 	<?php if ( have_posts() ): ?>
@@ -15,7 +12,8 @@
               <span><a href="#"><?php echo get_the_date( 'Y/m/d' ); ?></a></span>
           </p>
         </div> 
-		<div class="am-container">
+     
+        <div class="am-article-bd">
 			<!-- 广告位：single-文章标题下 -->
 			<script>
 			(function() {
@@ -29,9 +27,7 @@
 				});
 			})();
 			</script>
-		</div>       
-        <div class="am-article-bd">
-        	   <p class="am-article-lead">...</p>
+		<p class="am-article-lead">...</p>
 				<?php the_content(); ?>
         </div>
        </article>

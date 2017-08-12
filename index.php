@@ -1,40 +1,7 @@
 <?php get_header(); ?>
-<!-- nav end -->
 <!-- content srart -->
-<div class="am-g am-g-fixed">
-<div class="am-show-md-up am-g">
-	<div class="am-u-md-6">
-		<!-- 广告位：顶部广告左一 -->
-		<script>
-		(function() {
-			var s = "_" + Math.random().toString(36).slice(2);
-			document.write('<div id="' + s + '"></div>');
-			(window.slotbydup=window.slotbydup || []).push({
-				id: '4637741',
-				container: s,
-				size: '580,90',
-				display: 'inlay-fix'
-			});
-		})();
-		</script>
-	</div>
-	<div class="am-u-md-6">
-		<!-- 广告位：顶部广告左一 -->
-		<script>
-		(function() {
-			var s = "_" + Math.random().toString(36).slice(2);
-			document.write('<div id="' + s + '"></div>');
-			(window.slotbydup=window.slotbydup || []).push({
-				id: '4637741',
-				container: s,
-				size: '580,90',
-				display: 'inlay-fix'
-			});
-		})();
-		</script>
-	</div>
-</div>	
-<div class="am-g" id="main-content">
+
+<div class="am-g am-g-fixed" id="main-content">
 <!-- banner start -->
 <div class="am-u-md-8 am-u-sm-12">
   <div data-am-widget="slider" class="am-slider am-slider-b1" data-am-slider='{"controlNav:false","directionNav":false}' >
