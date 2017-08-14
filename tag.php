@@ -1,28 +1,29 @@
 <?php get_header(); ?>
 <!-- content srart -->
-<div class="am-g" id="main-content">
+<div class="am-g am-g-fixed" id="main-content">
 <div class="am-u-md-8 am-u-sm-12">
 <!-- banner end -->
 <section class="cat-box">
 	<div class="cat-box-title">
-		<h2><?php printf(__('Posts tagged %s', ATOM), '<span class="alt">'.single_cat_title('', false).'</span>'); ?>
-		</h2>
+		<h1><?php printf(__('标签存档： %s', ATOM), '<span class="alt">'.single_cat_title('', false).'</span>'); ?>
+		</h1>
 	</div>	
-
-<ul>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	<div class="post" id="post-<?php the_ID(); ?>">
-		<li>
-			<a href="<?php the_permalink(); ?>">
-				<?php the_title(); ?>
-			</a>
-		</li>
-		<div class="entry">
-		111
-		</div>
-	</div>
+        <article class="am-g blog-entry-article" id="post-<?php the_ID();?>" >
+            <div class="am-u-lg-6 am-u-md-12 am-u-sm-12 blog-entry-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/i/f10.jpg" alt="" class="am-u-sm-12">
+            </div>
+            <div class="am-u-lg-6 am-u-md-12 am-u-sm-12 blog-entry-text">
+                <h3><a href="<?php echo get_permalink(); ?>"</a><?php the_title_attribute(); ?></h3>
+                <span><a href="" class="blog-color"><?php the_category(', ') ?>&nbsp;</a></span>
+                <span>@<?php the_author();?>  &nbsp;</span>
+                <span><?php echo get_the_date( 'Y/m/d' ); ?></span>
+				<div class="entry"><?php the_excerpt(40); ?>
+                <a class="am-btn am-btn-danger am-radius am-btn-xs" target="_blank"  title="<?php the_title_attribute(); ?>" href="<?php echo get_permalink(); ?>">阅读全文 »</a>
+                </div>                
+            </div>	
+        </article>  	
 	<?php endwhile; endif; ?>
-	 </ul>
 </section>
 </div>
 
