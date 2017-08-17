@@ -37,7 +37,7 @@ add_action( 'after_setup_theme', 'zszan_setup' );
 
 
 function emtx_excerpt_length( $length ) {
-	return 100; //把92改为你需要的字数，具体就看你的模板怎么显示了。
+	return 250; //把92改为你需要的字数，具体就看你的模板怎么显示了。
 }
 
 add_filter( 'excerpt_length', 'emtx_excerpt_length' );
@@ -51,7 +51,7 @@ function cmp_breadcrumbs() {
 	$before = '<span class="current">'; // 在当前链接前插入
 	$after = '</span>'; // 在当前链接后插入
 	if ( !is_home() && !is_front_page() || is_paged() ) {
-		echo '<ol itemscope itemtype="http://schema.org/WebPage" id="crumbs">'.__( 当前位置： );
+		echo '<ol class="am-vertical-align-middle" itemscope itemtype="http://schema.org/WebPage" id="crumbs">'.__( 当前位置： );
 		global $post;
 		$homeLink = home_url();
 		echo ' <a itemprop="breadcrumb" href="' . $homeLink . '">' . __( 首页 ) . '</a> ' . $delimiter . ' ';
@@ -135,7 +135,9 @@ function cmp_breadcrumbs() {
 	}
 }
 
-
+//去除摘要和文字内容P标签
+remove_filter( 'the_excerpt', 'wpautop' );
+//性能显示
 function performance( $visible = false ) {
     $stat = sprintf(  '%d queries in %.3f seconds, using %.2fMB memory',
         get_num_queries(),

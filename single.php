@@ -27,8 +27,10 @@
 				});
 			})();
 			</script>
-		<p class="am-article-lead">...</p>
-				<?php the_content(); ?>
+		<p class="am-article-lead">
+		<?php the_excerpt(200); ?> 
+		</p>
+		<?php the_content(); ?>
         </div>
        </article>
         
