@@ -31,15 +31,18 @@
 		<?php the_excerpt(200); ?> 
 		</p>
 		<?php the_content(); ?>
+       
+       	
         </div>
        </article>
         
         <div class="am-g blog-article-widget blog-article-margin">
           <div class="am-u-lg-4 am-u-md-5 am-u-sm-7 am-u-sm-centered blog-text-center">
-            <span class="am-icon-tags"> &nbsp;</span>
+            <span class="am-icon-tags"> &nbsp;
 			<?php
 			echo get_the_tag_list();
 			?>
+            </span>
             <hr>
             <a href=""><span class="am-icon-qq am-icon-fw am-primary blog-icon"></span></a>
             <a href=""><span class="am-icon-wechat am-icon-fw blog-icon"></span></a>

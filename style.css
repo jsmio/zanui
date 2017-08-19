@@ -104,3 +104,12 @@ am-u-md-8 am-u-sm-12 blog-bor.h1, h2, h3, h4, h5, h6 {
     border-top: 0;
     -moz-box-shadow: 0 0 3px #cacaca;
 }
+
+
+.am-icon-tags a{padding:4px 10px;background-color:#19B5FE;color:#fff;font-size:12px;line-height:1.4;font-weight:400;margin:0 5px 5px 0;border-radius:2px;display:inline-block;}
+.am-icon-tags a:nth-child(5n){background-color:#4A4A4A;}
+.am-icon-tags a:nth-child(5n+1){background-color:#ff5e5c;}
+.am-icon-tags a:nth-child(5n+2){background-color:#ffbb50;}
+.am-icon-tags a:nth-child(5n+3){background-color:#1ac756;}
+.am-icon-tags a:nth-child(5n+4){background-color:#19B5FE;}
+.am-icon-tags  a:hover{background-color:#1B1B1B;color:#FFF}
