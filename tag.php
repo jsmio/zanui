@@ -18,9 +18,12 @@
                 <span><a href="" class="blog-color"><?php the_category(', ') ?>&nbsp;</a></span>
                 <span>@<?php the_author();?>  &nbsp;</span>
                 <span><?php echo get_the_date( 'Y/m/d' ); ?></span>
-				<div class="entry"><?php the_excerpt(40); ?>
-                <a class="am-btn am-btn-danger am-radius am-btn-xs" target="_blank"  title="<?php the_title_attribute(); ?>" href="<?php echo get_permalink(); ?>">阅读全文 »</a>
-                </div>                
+				<div class="entry">
+                <p>
+                <?php echo wp_trim_words( get_the_excerpt(), 50 );?>
+                </p>
+                </div>
+                <a class="am-btn am-btn-danger am-radius am-btn-xs" target="_blank"  title="<?php the_title_attribute(); ?>" href="<?php echo get_permalink(); ?>">阅读全文 »</a>                
             </div>	
         </article>  	
 	<?php endwhile; endif; ?>

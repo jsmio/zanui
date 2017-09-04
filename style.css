@@ -105,6 +105,10 @@ am-u-md-8 am-u-sm-12 blog-bor.h1, h2, h3, h4, h5, h6 {
     -moz-box-shadow: 0 0 3px #cacaca;
 }
 
+.breadcrumb-box ol{
+margin: 0.5rem 0 0.5rem 0;
+padding-left:10px;	
+}
 
 .am-icon-tags a{padding:4px 10px;background-color:#19B5FE;color:#fff;font-size:12px;line-height:1.4;font-weight:400;margin:0 5px 5px 0;border-radius:2px;display:inline-block;}
 .am-icon-tags a:nth-child(5n){background-color:#4A4A4A;}

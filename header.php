@@ -68,7 +68,7 @@ if (( is_home() || is_front_page() ) ){
 }
 else
 {
-echo "<div class=\"breadcrumb-box am-text-left am-text-middle\">\n";
+echo "<div class=\"breadcrumb-box\">\n";
 if(function_exists('cmp_breadcrumbs')) cmp_breadcrumbs();
 echo "</div>\n";
 }	
